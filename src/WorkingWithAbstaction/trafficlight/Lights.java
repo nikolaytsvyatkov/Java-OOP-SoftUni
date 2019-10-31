@@ -1,15 +1,14 @@
 package WorkingWithAbstaction.trafficlight;
 
-public enum  TrafficLights {
+public enum Lights {
         RED(1),
         GREEN(2),
         YELLOW(3);
         private int value;
 
-    TrafficLights(int value) {
+    Lights(int value) {
         this.value = value;
     }
-
     public int getValue() {
         return value;
     }
