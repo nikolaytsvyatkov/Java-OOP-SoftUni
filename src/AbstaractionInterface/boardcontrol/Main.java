@@ -9,6 +9,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String[] strings =  input.nextLine().split(" ");
         List<Identifiable> list = new ArrayList<>();
+
         while (!strings[0].equals("End")) {
             switch (strings.length) {
                 case 2:
