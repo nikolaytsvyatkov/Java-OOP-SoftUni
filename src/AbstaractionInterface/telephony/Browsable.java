@@ -1,4 +1,4 @@
-package telephony;
+package AbstaractionInterface.telephony;
 
 public interface Browsable {
     String browse();
