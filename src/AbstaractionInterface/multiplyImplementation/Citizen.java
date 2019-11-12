@@ -1,11 +1,12 @@
-package multiplyImplementation;
+package AbstaractionInterface.multiplyImplementation;
 
 
-public class Citizen implements Person,Identifiable, Birthable {
+public class Citizen implements Person,Identifiable, Birthable, Buyer {
     private String name;
     private int age;
     private String id;
     private String birthDate;
+    private int food;
 
     public Citizen(String name, int age,String id, String birthDate) {
         this.name = name;
@@ -32,5 +33,15 @@ public class Citizen implements Person,Identifiable, Birthable {
     @Override
     public String getId() {
         return id;
+    }
+
+    @Override
+    public void buyFood() {
+        this.food += 10;
+    }
+
+    @Override
+    public int getFood() {
+        return this.food;
     }
 }
