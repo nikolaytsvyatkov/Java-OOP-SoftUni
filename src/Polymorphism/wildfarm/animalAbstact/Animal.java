@@ -1,18 +1,22 @@
-package wildfarm.animalAbstact;
+package Polymorphism.wildfarm.animalAbstact;
 
 
-import wildfarm.foods.Food;
+import Polymorphism.wildfarm.foods.Food;
 
 public abstract class Animal {
     private String animalName;
     private String animalType;
     private Double animalWeight;
-    private Integer foodEaten;
+    private int foodEaten;
 
-    protected Animal(String animalName, String animalType, Double animalWeight, Integer foodEaten) {
+    protected Animal(String animalType, String animalName, Double animalWeight) {
         this.animalName = animalName;
         this.animalType = animalType;
         this.animalWeight = animalWeight;
+
+    }
+
+    protected void setFoodEaten(Integer foodEaten) {
         this.foodEaten = foodEaten;
     }
 
@@ -28,10 +32,12 @@ public abstract class Animal {
         return animalWeight;
     }
 
-    public Integer getFoodEaten() {
+    public int getFoodEaten() {
         return foodEaten;
     }
 
     public abstract void makeSound();
     public abstract void eat(Food food);
+
+
 }

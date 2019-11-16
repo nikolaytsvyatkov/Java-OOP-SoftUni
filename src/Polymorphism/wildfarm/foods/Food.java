@@ -1,4 +1,4 @@
-package wildfarm.foods;
+package Polymorphism.wildfarm.foods;
 
 public abstract class Food {
     private Integer quantity;
